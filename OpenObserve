@@ -1,0 +1,56 @@
+Column pruning : 
+OpenObserve uses columnar storage format (parquet) which allows it to read only the columns that are required for a query. This reduces the amount of data that needs to be read from disk and improves search performance. This technique is called column pruning. It reduces the amount of data that needs to be read from disk. You must switch to SQL query mode for this and specify only the columns that you want to be returned.
+
+Partioning - 
+
+Predicate pushdown:
+
+Standard Partitioning (KeyValue partitions) - Note: Use For low cardinality fields
+org/stream/year/month/day/hour 
+DO NOT enable partitioning on all/many fields as it may result in many small underlying parquet files which will result in low compression, extremely poor search performance and high s3 storage costs
+You can partition by namespace, pod or pod, namespace.
+
+Hash partition :
+Note: Use For low cardinality fields
+
+Standard KeyValue partitions are a good way to partition data. However, if data in a particular field is not divided evenly then you may end up with some partitions having more data than others.
+e.g. For a namespace based partitioning if you have 10 million log records with following number of log entries for each namespace:
+
+namespace01: 4 million
+namespace02: 2 million
+namespace03: 1 million
+
+If you set KeyValue partition on the namespace field, you will have 25 partitions. However, the data is not evenly distributed across these partitions. For example, one partition may contain 4 million records while another may have only 2 million. This uneven distribution can lead to some partitions being slow to search while others are fast. Additionally, smaller partitions may result in small parquet files with low compression and high storage costs in S3.
+
+
+In such cases you should enable hash partitioning. Hash partitioning is a way to divide data across partitions based on defined number of hash buckets. You can enable hash partitioning for a field by going to stream settings.
+
+You can specify the number of buckets (8, 16, 32, 64, 128) in the index in stream setting when setting up hash partitioning for a particular field.
+
+
+Time range partition :
+Note: Enabled by default and cannot be disabled
+
+OpenObserve partitions all data by time range by default in addition to any other partitions that you may have defined. It always makes sense to specify the shortest time range to search for. e.g. if you know that you are looking for data for last 15 minutes, you should specify that in your query by selecting it from the top right corner. This will improve search performance and will utilize predicate pushdown.
+
+
+
+Bloom filter - 
+Bloom filter (available starting v0.8.0) (For high cardinality fields)
+Note: Use For high cardinality fields
+
+A bloom filter is a space efficient probabilistic data structure that allow you to check if a value exists in a set
+
+Inverted Index (available starting v0.10.0)
+Above mentioned partitioning schemes and bloom filters are good for fields where you are doing equality based searches. e.g. request_id='abc'. For full text search in fields that contain longer log lines, OpenObserve in its earlier releases relied on brute force search (how grep works) which works well for most of the scenarios. However, for very large data sets this can be slow. You can enable inverted index to improve full text search performance for such fields. Do not enable inverted index for fields that are not used for full text search but are used for equality based searches. Bloom filters and hash partitions are better suited for equality based searches.
+
+Inverted index is a data structure that maps content to its location in a document. It is used to optimize full text search. OpenObserve uses inverted index to optimize full text search. You must specify inverted index for the specific fields that you want to search. Fields that are well suited for inverted index have long amount of text and has many words. e.g. body, log, message, etc.
+
+e.g. log line:
+
+
+setup.go:202] cert-manager/issuers "msg"="skipping re-verifying ACME account as cached registration details look sufficient"
+and are used for full text search.
+You can specify inverted index for a field by going to stream settings. You can specify multiple fields for inverted index. e.g. body and message. You can then use the fields in your query that will utilize inverted index. e.g. match_all("searchterm").
+
+Based on our tests, inverted index can improve full text search performance by up to 1000x. Enabling inverted index will lead to approximately 25% storage overhead for the stream and may vary based on data entropy.

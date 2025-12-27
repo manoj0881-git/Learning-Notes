@@ -1,2 +1,2 @@
-# Learning-Notes
-Design a Word Dictionary
+ Design a Word Dictionary
+

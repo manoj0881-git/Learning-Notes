@@ -1,5 +1,5 @@
 # Design a Word Dictionary
-
+<!--ts-->
 [Design a Word Dictionary](#design-a-word-dictionary)
 [Problem Statement](#problem-statement)
 [Requirements](#requirements) 

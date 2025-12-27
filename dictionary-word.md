@@ -1,5 +1,6 @@
 # Design a Word Dictionary
 Design a Word Dictionary
+
 Problem Statement
 Requirements
 Core Requirements

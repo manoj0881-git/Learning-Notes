@@ -38,3 +38,78 @@
 38. How does Service Mesh work?
 39. What is difference between Blue Green and Canary deployment?
 40. How does Distributed Cache work?
+
+    -- DSA --
+1. Two Pointers 
+2. Sliding Window 
+3. Prefix Sums 
+4. Merge Intervals 
+5. Binary Search (and Variants) 
+6. Sorting-Based Patterns 
+7. Fast and Slow Pointers 
+8. Backtracking & Recursive Search 
+9. Divide and Conquer 
+10. Linked List Techniques (Dummy Node, In-place Reversal) 
+11. Stacks and Queues 
+12. Monotonic Stack / Queue 
+13. Expression Evaluation (Two Stacks) 
+14. String Manipulation & Regular Expressions 
+15. Hashmaps & Frequency Counting 
+16. Binary Trees & BSTs (Traversal, Construction, Properties) 
+17. Path Sum & Root-to-Leaf Techniques 
+18. Kth Largest/Smallest Elements (Heaps / QuickSelect) 
+19. Top K Frequent Elements 
+20. Merge K Sorted Lists 
+21. Dynamic Programming (Including Knapsack, Range DP, etc.) 
+22. Greedy & Interval Partitioning 
+23. Graph Traversals (BFS, DFS) 
+24. Graph Algorithms (DAGs, MSTs, Shortest Paths, etc.) 
+25. Design Problems (LRU Cache, Twitter, etc.)
+
+btw if you're interviewing, here's my personal cheatsheet: https://lnkd.in/d_eCGEJR
+___
+
+
+Coding Interview:
+
+0. Coding Interview University (327k stars): https://lnkd.in/dH9NSDNX
+1. Grind 75 Practice Questions: https://lnkd.in/dbCrn7yw
+2. Awesome Leetcode Resources: https://lnkd.in/dnjwGFjM
+3. Neetcode App and Youtube: https://neetcode.io/
+4. The Tech Interview Handbook: https://lnkd.in/desaJkhu
+
+
+System Design Interview:
+
+5. Awesome System Design Resources: https://lnkd.in/dU6wFXkn
+6. System Design 101 (76k stars): https://lnkd.in/d5itZHgQ
+7. System Design Basics Playlist on Youtube: https://lnkd.in/dN3fpjWZ
+8. System Design Github Repo: https://lnkd.in/dbfAK_6A
+9. The System Design Roadmap (by roadmap.sh): https://lnkd.in/d3S79YVJ
+
+
+Object-Oriented Design Interview:
+
+10. Awesome Design Patterns (44k stars): https://lnkd.in/dyAHdeFi
+11. Design Patterns with Visuals: https://lnkd.in/dnyZXQ52
+12. Awesome Low-Level Design: https://lnkd.in/d9yt9grg
+13. Design Patterns Youtube Playlist: https://lnkd.in/dWyf3nma
+14. System Design Primer (259k stars): https://lnkd.in/dkPScaCW
+
+
+Frontend Interview:
+
+15. The Front-End Interview Handbook: https://lnkd.in/dhXn96yC
+16. Javascript Visualized Series: https://lnkd.in/dHz8RTGD
+17. BigFrontend for Practice Questions by Companies: https://bigfrontend.dev/
+18. Front-End Developer Interview Questions (61k stars): https://lnkd.in/d-bJuE6S
+19. Great Frontend to Plan and Practice (aff.): https://lnkd.in/dEGV-ZfV
+
+
+Behavioral Interview:
+
+20. Awesome Behavioral Interviews: https://lnkd.in/dTBvfcau
+21. The Behavioral Interview Youtube Playlist: https://lnkd.in/dgjmKYae
+22. The STAR methodology: https://lnkd.in/dE8yeieq
+23. Behavioral Questions with Example Answers: https://lnkd.in/dUpyuYKr
+24. Interview Questions by Company: https://lnkd.in/dBRmGtaW 

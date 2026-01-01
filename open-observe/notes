@@ -1,12 +1,12 @@
-Column pruning : 
+Column pruning :
 OpenObserve uses columnar storage format (parquet) which allows it to read only the columns that are required for a query. This reduces the amount of data that needs to be read from disk and improves search performance. This technique is called column pruning. It reduces the amount of data that needs to be read from disk. You must switch to SQL query mode for this and specify only the columns that you want to be returned.
 
-Partioning - 
+Partioning -
 
 Predicate pushdown:
 
 Standard Partitioning (KeyValue partitions) - Note: Use For low cardinality fields
-org/stream/year/month/day/hour 
+org/stream/year/month/day/hour
 DO NOT enable partitioning on all/many fields as it may result in many small underlying parquet files which will result in low compression, extremely poor search performance and high s3 storage costs
 You can partition by namespace, pod or pod, namespace.
 
@@ -35,7 +35,7 @@ OpenObserve partitions all data by time range by default in addition to any othe
 
 
 
-Bloom filter - 
+Bloom filter -
 Bloom filter (available starting v0.8.0) (For high cardinality fields)
 Note: Use For high cardinality fields
 
@@ -54,3 +54,4 @@ and are used for full text search.
 You can specify inverted index for a field by going to stream settings. You can specify multiple fields for inverted index. e.g. body and message. You can then use the fields in your query that will utilize inverted index. e.g. match_all("searchterm").
 
 Based on our tests, inverted index can improve full text search performance by up to 1000x. Enabling inverted index will lead to approximately 25% storage overhead for the stream and may vary based on data entropy.
+~                                                                                                                                                                                                                       

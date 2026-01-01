@@ -1,0 +1,169 @@
+What is difference between API Gateway and Load Balancer?
+
+What is difference between Reverse Proxy and Forward Proxy?
+
+What is difference between Horizontal scaling and vertical scaling?
+
+What is difference between Microservices and Monolithic architecture?
+
+What is difference between vertical and horizontal partitioning?
+
+What is Rate Limiter? How does it work?
+
+How does Single Sign On (SSO) works?
+
+How does Apache Kafka works? Why is it so fast?
+
+Difference between Kafka, ActiveMQ, and RabbitMQ?
+
+Difference between JWT, OAuth, and SAML?
+
+What is difference between SQL and NoSQL databases?
+
+How does Content Delivery Network (CDN) work?
+
+What is difference between Synchronous and Asynchronous communication?
+
+How does Database Sharding work?
+
+What is difference between REST and GraphQL?
+
+How does Caching work? What are caching strategies?
+
+What is difference between Strong and Eventual Consistency?
+
+How does Message Queue work?
+
+What is difference between TCP and UDP?
+
+How does Database Replication work?
+
+What is difference between Stateful and Stateless architecture?
+
+How does Circuit Breaker pattern work?
+
+What is difference between Authentication and Authorization?
+
+How does Distributed Tracing work?
+
+What is difference between ACID and BASE properties?
+
+How does Service Discovery work?
+
+What is difference between Push and Pull architecture?
+
+How does Database Indexing work?
+
+What is difference between Batch and Stream processing?
+
+How does Consistent Hashing work?
+
+What is difference between RPC and REST?
+
+How does Leader Election work in distributed systems?
+
+What is difference between Optimistic and Pessimistic locking?
+
+How does Two Phase Commit work?
+
+What is difference between CAP theorem components?
+
+How does Bloom Filter work?
+
+What is difference between WebSocket and HTTP?
+
+How does Service Mesh work?
+
+What is difference between Blue Green and Canary deployment?
+
+How does Distributed Cache work?
+
+-- DSA --
+
+Two Pointers
+
+Sliding Window
+
+Prefix Sums
+
+Merge Intervals
+
+Binary Search (and Variants)
+
+Sorting-Based Patterns
+
+Fast and Slow Pointers
+
+Backtracking & Recursive Search
+
+Divide and Conquer
+
+Linked List Techniques (Dummy Node, In-place Reversal)
+
+Stacks and Queues
+
+Monotonic Stack / Queue
+
+Expression Evaluation (Two Stacks)
+
+String Manipulation & Regular Expressions
+
+Hashmaps & Frequency Counting
+
+Binary Trees & BSTs (Traversal, Construction, Properties)
+
+Path Sum & Root-to-Leaf Techniques
+
+Kth Largest/Smallest Elements (Heaps / QuickSelect)
+
+Top K Frequent Elements
+
+Merge K Sorted Lists
+
+Dynamic Programming (Including Knapsack, Range DP, etc.)
+
+Greedy & Interval Partitioning
+
+Graph Traversals (BFS, DFS)
+
+Graph Algorithms (DAGs, MSTs, Shortest Paths, etc.)
+
+Design Problems (LRU Cache, Twitter, etc.)
+
+btw if you're interviewing, here's my personal cheatsheet: https://lnkd.in/d_eCGEJR
+
+Coding Interview:
+
+Coding Interview University (327k stars): https://lnkd.in/dH9NSDNX
+Grind 75 Practice Questions: https://lnkd.in/dbCrn7yw
+Awesome Leetcode Resources: https://lnkd.in/dnjwGFjM
+Neetcode App and Youtube: https://neetcode.io/
+The Tech Interview Handbook: https://lnkd.in/desaJkhu
+System Design Interview:
+
+Awesome System Design Resources: https://lnkd.in/dU6wFXkn
+System Design 101 (76k stars): https://lnkd.in/d5itZHgQ
+System Design Basics Playlist on Youtube: https://lnkd.in/dN3fpjWZ
+System Design Github Repo: https://lnkd.in/dbfAK_6A
+The System Design Roadmap (by roadmap.sh): https://lnkd.in/d3S79YVJ
+Object-Oriented Design Interview:
+
+Awesome Design Patterns (44k stars): https://lnkd.in/dyAHdeFi
+Design Patterns with Visuals: https://lnkd.in/dnyZXQ52
+Awesome Low-Level Design: https://lnkd.in/d9yt9grg
+Design Patterns Youtube Playlist: https://lnkd.in/dWyf3nma
+System Design Primer (259k stars): https://lnkd.in/dkPScaCW
+Frontend Interview:
+
+The Front-End Interview Handbook: https://lnkd.in/dhXn96yC
+Javascript Visualized Series: https://lnkd.in/dHz8RTGD
+BigFrontend for Practice Questions by Companies: https://bigfrontend.dev/
+Front-End Developer Interview Questions (61k stars): https://lnkd.in/d-bJuE6S
+Great Frontend to Plan and Practice (aff.): https://lnkd.in/dEGV-ZfV
+Behavioral Interview:
+
+Awesome Behavioral Interviews: https://lnkd.in/dTBvfcau
+The Behavioral Interview Youtube Playlist: https://lnkd.in/dgjmKYae
+The STAR methodology: https://lnkd.in/dE8yeieq
+Behavioral Questions with Example Answers: https://lnkd.in/dUpyuYKr
+Interview Questions by Company: https://lnkd.in/dBRmGtaW
